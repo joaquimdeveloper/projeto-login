@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     </head>
+    
 <body>
     <main>
+        
         <section id="login">
             <div id="imagem">
                  
@@ -20,21 +22,24 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <span class="material-symbols-outlined">
-                            menu
-                            </span>
-                                                                      
-                         <input type="email" name="login" id="ilogin"placeholder="seu e-mail" autocomplete="email">
+                        <i class="material-icons">person</i>
+                        
+                                                
+                         <input type="email" name="login" id="ilogin"placeholder="seu e-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
-                        <span class="material-icons-outlined">
-                            settings
-                            </span>
+                        <i class="material-icons">vpn_key</i>
+                        
+                        
                          <input type="password" name="senha" id="isenha" placeholder="sua senha" 
-                             autocomplete=" current-password">
+                             autocomplete=" current-password" required minlength="8" maxlength="20">
                          <label for="isenha">Senha</label>
                     </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
                 </form>
 
             </div>
